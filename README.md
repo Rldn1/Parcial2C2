@@ -3,15 +3,19 @@
 # Integrantes:
 Esmeralda Isabel Cruz Roldán - SMSS011124
 
+## Usuarios del Sistema
 
-# Usuarios y contraseñas
+| # | Username | Rol |
+|---|----------|-----|
+| 1 | admin | Administrador |
+| 2 | juan_perez | Usuario normal |
+| 3 | maria_gomez | Usuario normal |
+| 4 | carlos_ramirez | Usuario normal |
+| 5 | laura_martinez | Usuario normal |
 
-Usuario       | Clave
-admin           admin123
-juan_perez      user123
-maria_gomez     user123
-carlos_ramirez  user123
-laura_martinez  user123
+**Credenciales de prueba:**
+- **Admin:** username: `admin`
+- **Usuarios:** cualquier username de los listados.
 
 # Preguntas
 
