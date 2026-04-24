@@ -72,17 +72,17 @@ Tabla: `usuarios`
 
 Tabla: `citas_medicas`
 
-Columna | Tipo de dato | Límite | ¿Es nulo? | Descripción 
-
-id                 | INT | 11 | NO | Identificador único de la cita |
-paciente_nombre    | VARCHAR | 60 | NO | Nombre completo del paciente |
-telefono           | VARCHAR | 9 | NO | Número de teléfono de contacto |
-medico             | VARCHAR | 50 | NO | Nombre del médico asignado |
-tipo_consulta      | VARCHAR | 20 | NO | General o Especialista |
-fecha_cita         | DATE    | - | NO | Fecha de la primera cita |
-fecha_segunda_cita | DATE | - | SÍ | Fecha de la segunda cita (puede quedar vacía) |
-sintomas           | TEXT | - | SÍ | Descripción de los síntomas del paciente |
-fecha_registro     | TIMESTAMP | - | NO | Fecha y hora en que se creó el registro |
+| Columna | Tipo de dato | Límite | ¿Es nulo? | Descripción |
+|---------|-------------|--------|-----------|-------------|
+| id | INT | 11 | NO | Identificador único de la cita (autoincrementable) |
+| paciente_nombre | VARCHAR | 60 | NO | Nombre completo del paciente |
+| telefono | VARCHAR | 9 | NO | Número de teléfono de contacto |
+| medico | VARCHAR | 50 | NO | Nombre del médico asignado |
+| tipo_consulta | VARCHAR | 20 | NO | Tipo de consulta: `General` o `Especialista` |
+| fecha_cita | DATE | - | NO | Fecha de la primera cita |
+| fecha_segunda_cita | DATE | - | SÍ | Fecha de la segunda cita (puede quedar vacía/NULL) |
+| sintomas | TEXT | - | SÍ | Descripción de los síntomas del paciente |
+| fecha_registro | TIMESTAMP | - | NO | Fecha y hora en que se creó el registro (automático) |
 
 
 
