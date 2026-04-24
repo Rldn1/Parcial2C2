@@ -50,7 +50,7 @@ INSERT INTO `citas_medicas` (`id`, `paciente_nombre`, `telefono`, `medico`, `tip
 (4, 'Roberto Díaz', '7456-3210', 'Dr. Luis Pérez', 'Especialista', '2026-12-18', '2027-05-18', 'Problemas de visión...', '2026-04-24 13:25:26'),
 (5, 'Ana Martínez', '7788-5544', 'Dra. Ana García', 'General', '2026-11-20', NULL, 'Dolor de oído...', '2026-04-24 13:25:33'),
 (6, 'Isabel Cruz', '6001-5632', 'Dra. Marta Sánchez', 'Especialista', '2026-04-30', NULL, 'Dolor de cabeza...', '2026-04-24 13:25:45'),
-(7, 'Alex', 'Martinez', 'Dra. Ana García', 'General', '2026-06-18', '2026-09-25', 'Dolor de cuello...', '2026-04-24 13:26:11'),
+(7, 'Alex Martinez', '7485-9632', 'Dra. Ana García', 'General', '2026-06-18', '2026-09-25', 'Dolor de cuello...', '2026-04-24 13:26:11'),
 (8, 'Fer Rodríguez', '7456-5476', 'Dr. Luis Pérez', 'General', '2026-04-29', NULL, 'Dolor de espalda...', '2026-04-24 13:26:35');
 
 -- --------------------------------------------------------
