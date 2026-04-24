@@ -2,16 +2,7 @@
 
 # Integrantes:
 Esmeralda Isabel Cruz Roldán - SMSS011124
-
-
-# Usuarios y contraseñas
-
-Usuario       | Clave
-admin           admin123
-juan_perez      user123
-maria_gomez     user123
-carlos_ramirez  user123
-laura_martinez  user123
+Mario Antonio Salamanca Romero - SMSS085424
 
 # Preguntas
 
@@ -59,26 +50,41 @@ Mitigación: Validamos del lado del servidor que los campos obligatorios no est�
 
 Tabla: `usuarios`
 
-Columna | Tipo de dato | Límite | ¿Es nulo? | Descripción 
+| Columna   | Tipo de dato | Límite | ¿Es nulo? | Descripción |
+|-----------|-------------|--------|-----------|-------------|
+| id        | INT         | 11     | NO        | Identificador único del usuario (autoincrementable) |
+| username  | VARCHAR     | 30     | NO        | Nombre de usuario para iniciar sesión |
+| email     | VARCHAR     | 100    | NO        | Correo electrónico del usuario (único) |
+| password  | VARCHAR     | 60     | NO        | Contraseña encriptada con `password_hash()` |
+| rol       | VARCHAR     | 20     | NO        | Tipo de usuario: `admin` (administrador) o `user` (normal) |
 
-id       | INT     | 11  | NO | Identificador único del usuario                        |
-username | VARCHAR | 30  | NO | Nombre de usuario para iniciar sesión                  |
-password | VARCHAR | 60  | NO | Contraseña encriptada con password_hash()              |
-rol      | VARCHAR | 20  | NO | Tipo de usuario (admin = administrador, user = normal) |
+## Usuarios del Sistema
+
+| # | Username | Rol | Contraseña |
+|---|----------|-----|-------------|
+| 1 | admin    | Administrador | `admin123` |
+| 2 | juan_perez | Usuario normal | `user123` |
+| 3 | maria_gomez | Usuario normal | `user123` |
+| 4 | carlos_ramirez | Usuario normal | `user123` |
+| 5 | laura_martinez | Usuario normal | `user123` |
+
+**Credenciales de prueba:**
+- **Admin:** username: `admin`
+- **Usuarios:** cualquier username de los listados.
 
 Tabla: `citas_medicas`
 
-Columna | Tipo de dato | Límite | ¿Es nulo? | Descripción 
-
-id                 | INT | 11 | NO | Identificador único de la cita |
-paciente_nombre    | VARCHAR | 60 | NO | Nombre completo del paciente |
-telefono           | VARCHAR | 9 | NO | Número de teléfono de contacto |
-medico             | VARCHAR | 50 | NO | Nombre del médico asignado |
-tipo_consulta      | VARCHAR | 20 | NO | General o Especialista |
-fecha_cita         | DATE    | - | NO | Fecha de la primera cita |
-fecha_segunda_cita | DATE | - | SÍ | Fecha de la segunda cita (puede quedar vacía) |
-sintomas           | TEXT | - | SÍ | Descripción de los síntomas del paciente |
-fecha_registro     | TIMESTAMP | - | NO | Fecha y hora en que se creó el registro |
+| Columna | Tipo de dato | Límite | ¿Es nulo? | Descripción |
+|---------|-------------|--------|-----------|-------------|
+| id | INT | 11 | NO | Identificador único de la cita (autoincrementable) |
+| paciente_nombre | VARCHAR | 60 | NO | Nombre completo del paciente |
+| telefono | VARCHAR | 9 | NO | Número de teléfono de contacto |
+| medico | VARCHAR | 50 | NO | Nombre del médico asignado |
+| tipo_consulta | VARCHAR | 20 | NO | Tipo de consulta: `General` o `Especialista` |
+| fecha_cita | DATE | - | NO | Fecha de la primera cita |
+| fecha_segunda_cita | DATE | - | SÍ | Fecha de la segunda cita (puede quedar vacía/NULL) |
+| sintomas | TEXT | - | SÍ | Descripción de los síntomas del paciente |
+| fecha_registro | TIMESTAMP | - | NO | Fecha y hora en que se creó el registro (automático) |
 
 
 
