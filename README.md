@@ -60,13 +60,13 @@ Tabla: `usuarios`
 
 ## Usuarios del Sistema
 
-| # | Username | Rol |
-|---|----------|-----|
-| 1 | admin | Administrador |
-| 2 | juan_perez | Usuario normal |
-| 3 | maria_gomez | Usuario normal |
-| 4 | carlos_ramirez | Usuario normal |
-| 5 | laura_martinez | Usuario normal |
+| # | Username | Rol | Contraseña |
+|---|----------|-----|-------------|
+| 1 | admin    | Administrador | `admin123` |
+| 2 | juan_perez | Usuario normal | `user123` |
+| 3 | maria_gomez | Usuario normal | `user123` |
+| 4 | carlos_ramirez | Usuario normal | `user123` |
+| 5 | laura_martinez | Usuario normal | `user123` |
 
 **Credenciales de prueba:**
 - **Admin:** username: `admin`
