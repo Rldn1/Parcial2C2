@@ -49,12 +49,12 @@ Mitigación: Validamos del lado del servidor que los campos obligatorios no est�
 
 Tabla: `usuarios`
 
-Columna | Tipo de dato | Límite | ¿Es nulo? | Descripción 
-
-id       | INT     | 11  | NO | Identificador único del usuario                        |
-username | VARCHAR | 30  | NO | Nombre de usuario para iniciar sesión                  |
-password | VARCHAR | 60  | NO | Contraseña encriptada con password_hash()              |
-rol      | VARCHAR | 20  | NO | Tipo de usuario (admin = administrador, user = normal) |
+| Columna   | Tipo de dato | Límite | ¿Es nulo? | Descripción |
+|-----------|-------------|--------|-----------|-------------|
+| id        | INT         | 11     | NO        | Identificador único del usuario (autoincrementable) |
+| username  | VARCHAR     | 30     | NO        | Nombre de usuario para iniciar sesión |
+| password  | VARCHAR     | 60     | NO        | Contraseña encriptada con `password_hash()` |
+| rol       | VARCHAR     | 20     | NO        | Tipo de usuario: `admin` (administrador) o `user` (normal) |
 
 ## Usuarios del Sistema
 
