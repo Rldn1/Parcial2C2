@@ -5,20 +5,21 @@
 require_once 'conexion.php';
 
 $usuarios = [
-    ['admin', 'admin123', 'admin'],
-    ['juan_perez', 'user123', 'user'],
-    ['maria_gomez', 'user123', 'user'],
-    ['carlos_ramirez', 'user123', 'user'],
-    ['laura_martinez', 'user123', 'user']
+    ['admin', 'admin@farmacia.com', 'admin123', 'admin'],
+    ['juan_perez', 'juan@farmacia.com', 'user123', 'user'],
+    ['maria_gomez', 'maria@farmacia.com', 'user123', 'user'],
+    ['carlos_ramirez', 'carlos@farmacia.com', 'user123', 'user'],
+    ['laura_martinez', 'laura@farmacia.com', 'user123', 'user']
 ];
 
 foreach($usuarios as $user) {
     $username = $user[0];
-    $password = password_hash($user[1], PASSWORD_DEFAULT);
-    $rol = $user[2];
+    $email = $user[1];
+    $password = password_hash($user[2], PASSWORD_DEFAULT);
+    $rol = $user[3];
     
-    $stmt = $conexion->prepare("INSERT INTO usuarios (username, password, rol) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $username, $password, $rol);
+    $stmt = $conexion->prepare("INSERT INTO usuarios (username, email, password, rol) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $username, $email, $password, $rol);
     $stmt->execute();
     $stmt->close();
 }
@@ -26,6 +27,5 @@ foreach($usuarios as $user) {
 echo "Usuarios insertados correctamente";
 $conexion->close();
 ?>
-
 
 
