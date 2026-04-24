@@ -3,20 +3,6 @@
 # Integrantes:
 Esmeralda Isabel Cruz Roldán - SMSS011124
 
-## Usuarios del Sistema
-
-| # | Username | Rol |
-|---|----------|-----|
-| 1 | admin | Administrador |
-| 2 | juan_perez | Usuario normal |
-| 3 | maria_gomez | Usuario normal |
-| 4 | carlos_ramirez | Usuario normal |
-| 5 | laura_martinez | Usuario normal |
-
-**Credenciales de prueba:**
-- **Admin:** username: `admin`
-- **Usuarios:** cualquier username de los listados.
-
 # Preguntas
 
 
@@ -69,6 +55,20 @@ id       | INT     | 11  | NO | Identificador único del usuario                
 username | VARCHAR | 30  | NO | Nombre de usuario para iniciar sesión                  |
 password | VARCHAR | 60  | NO | Contraseña encriptada con password_hash()              |
 rol      | VARCHAR | 20  | NO | Tipo de usuario (admin = administrador, user = normal) |
+
+## Usuarios del Sistema
+
+| # | Username | Rol |
+|---|----------|-----|
+| 1 | admin | Administrador |
+| 2 | juan_perez | Usuario normal |
+| 3 | maria_gomez | Usuario normal |
+| 4 | carlos_ramirez | Usuario normal |
+| 5 | laura_martinez | Usuario normal |
+
+**Credenciales de prueba:**
+- **Admin:** username: `admin`
+- **Usuarios:** cualquier username de los listados.
 
 Tabla: `citas_medicas`
 
