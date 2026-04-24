@@ -3,6 +3,16 @@
 # Integrantes:
 Esmeralda Isabel Cruz Roldán - SMSS011124
 
+
+# Usuarios y contraseñas
+
+Usuario       | Clave
+admin           admin123
+juan_perez      user123
+maria_gomez     user123
+carlos_ramirez  user123
+laura_martinez  user123
+
 # Preguntas
 
 
