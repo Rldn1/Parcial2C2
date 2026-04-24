@@ -2,6 +2,7 @@
 
 # Integrantes:
 Esmeralda Isabel Cruz Roldán - SMSS011124
+Mario Antonio Salamanca Romero - SMSS085424
 
 # Preguntas
 
@@ -53,6 +54,7 @@ Tabla: `usuarios`
 |-----------|-------------|--------|-----------|-------------|
 | id        | INT         | 11     | NO        | Identificador único del usuario (autoincrementable) |
 | username  | VARCHAR     | 30     | NO        | Nombre de usuario para iniciar sesión |
+| email     | VARCHAR     | 100    | NO        | Correo electrónico del usuario (único) |
 | password  | VARCHAR     | 60     | NO        | Contraseña encriptada con `password_hash()` |
 | rol       | VARCHAR     | 20     | NO        | Tipo de usuario: `admin` (administrador) o `user` (normal) |
 
